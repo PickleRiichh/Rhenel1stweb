@@ -18,13 +18,21 @@
   }
 
   /* Left Section: Full-Screen Image */
-  .image-section {
-    flex: 1;
-    background: url('../images/1.png') no-repeat center center;
+  /* Left Section: Tenor GIF Embed */
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #f0f0f0; /* Optional background color to make it more visually appealing */
+}
 
-    background-size: 100% 100%; /* Make the image fill the container without zooming */
-    height: 100%;
-  }
+.tenor-gif-embed {
+  width: 100%;
+  max-width: 100%;  /* Ensures it takes up the available width */
+  height: auto; /* Adjusts the height automatically */
+}
 
   /* Right Section: Form */
   .form-section {
