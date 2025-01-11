@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat.Sy - Welcome</title>
+  <link href="https://fonts.googleapis.com/css?family=Life+Savers&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/global.css">
+  <style>
+     /* General Reset */
+     * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Life Savers', cursive;
+      background-color: #f9f9f9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Mission and Content */
+    .content-section {
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+    .content-section h2 {
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    /* Log Out Button */
+    .log-out {
+      position: fixed;
+      bottom: 10px;
+      right: 20px;
+      font-size: 0.8em;
+      text-decoration: none;
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      background-color: #f1f1f1;
+      color: #333;
+    }
+    .log-out:hover {
+      background-color: #e1e1e1;
+      color: #555;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 100%;
+        text-align: center;
+      }
+      .container {
+        flex-wrap: wrap;
+      }
+      .main-content {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Container for Sidebar and Main Content -->
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h1 class="logo">Cat.Sy <span class="paw">🐾</span></h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="meowbreeds.html">Meow Breeds</a></li>
+          <li><a href="catowners.html">Meow Members</a></li>
+          <li><a href="cat_records.html">Meow Records</a></li>
+          <li><a href="cat_discussion.html">Meow Discussion</a></li>
+          <li><a href="meoewabout.html">Meow About</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <section class="content-section">
+        <h2>Welcome to Cat.Sy! 🐾</h2>
+        <p>
+          Cat.Sy is a platform dedicated to cat enthusiasts where you can explore, learn, and connect with the
+          wonderful world of felines. Whether you're a proud cat owner, a curious learner, or simply love cats, we’ve
+          got something for you.
+        </p>
+      </section>
+
+      <section class="content-section">
+        <h2>Our Mission</h2>
+        <p>To bring cat lovers together by providing a space to:</p>
+        <ul>
+          <li>Explore cat breeds: Discover detailed information about various cat breeds, their origins, characteristics, and unique traits.</li>
+          <li>Connect with fellow pet lovers: Meet other members who share their stories, photos, and experiences with their cats.</li>
+          <li>Learn and share: Build a community where both new and experienced cat owners can learn about cat care, behaviors, and best practices.</li>
+        </ul>
+      </section>
+
+      <section class="content-section">
+        <h2>What You Can Do Here</h2>
+        <ul>
+          <li>Explore Cat Breeds: Learn fun and important facts about different cat breeds. Find the perfect breed that matches your lifestyle or simply enjoy the variety of cats out there.</li>
+          <li>Member Registration: Join our growing community of cat lovers! Members can create profiles, showcase their cats, and share their stories.</li>
+          <li>Discover Cat Profiles: Meet registered cats on our platform! View information about their breed, names, and owners who love them.</li>
+          <li>Build Connections: Connect with other pet owners who share your love for cats and exchange tips, stories, and advice.</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <a href="index.html" class="log-out">Log Out</a>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat.Sy - Welcome</title>
+  <link href="https://fonts.googleapis.com/css?family=Life+Savers&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/global.css">
+  <style>
+    
+    /* Mission and Content */
+    .content-section {
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+    .content-section h2 {
+      margin-bottom: 10px;
+      color: #555;
+    }
+    .discussion-section {
+      background-color: #e0e0e0;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+    }
+    .discussion-section h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      text-align: left;
+      border-bottom: 2px solid #333;
+    }
+    .discussion-box {
+      width: 100%;
+      height: 300px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      background-color: #fff;
+      padding: 10px;
+      overflow-y: auto;
+      margin-bottom: 10px;
+    }
+    .action-buttons {
+      margin-top: 10px;
+      text-align: right;
+    }
+    .action-buttons button {
+      padding: 5px 10px;
+      margin-left: 5px;
+      font-size: 0.9em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .edit-btn {
+      background-color: #ffc107;
+      color: #fff;
+    }
+    .edit-btn:hover {
+      background-color: #e0a800;
+    }
+    .delete-btn {
+      background-color: #dc3545;
+      color: #fff;
+    }
+    .delete-btn:hover {
+      background-color: #c82333;
+    }
+    .add-comment-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .add-comment-btn:hover {
+      background-color: #0056b3;
+    }
+
+    /* Log Out Button */
+    .log-out {
+      position: fixed;
+      bottom: 10px;
+      right: 20px;
+      font-size: 0.8em;
+      text-decoration: none;
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      background-color: #f1f1f1;
+      color: #333;
+    }
+    .log-out:hover {
+      background-color: #e1e1e1;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+     <!-- Container for Sidebar and Main Content -->
+     <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h1 class="logo">Cat.Sy <span class="paw">🐾</span></h1>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="meowbreeds.html">Meow Breeds</a></li>
+            <li><a href="catowners.html">Meow Members</a></li>
+            <li><a href="cat_records.html">Meow Records</a></li>
+            <li><a href="cat_discussion.html">Meow Discussion</a></li>
+            <li><a href="meoewabout.html">Meow About</a></li>
+          </ul>
+        </nav>
+      </aside>
+  
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <section class="discussion-section">
+          <h2>Online Discussion:</h2>
+          <div class="discussion-box">
+            <!-- Sample Comment -->
+            <div class="comment">
+              <p>Sample comment goes here...</p>
+              <div class="action-buttons">
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+              </div>
+            </div>
+          </div>
+          <button class="add-comment-btn">Add Comment</button>
+        </section>
+      </main>
+    </div>
+    
+    <!-- Log Out Button -->
+    <a href="index.html" class="log-out">Log Out</a>
+</body>
+</html>

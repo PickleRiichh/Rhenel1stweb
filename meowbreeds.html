@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat.Sy - Welcome</title>
+  <link href="https://fonts.googleapis.com/css?family=Life+Savers&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/global.css">
+
+  <style>
+    .main-content {
+      flex: 1;
+      padding: 0px;
+      margin-left: 0px; /* Space for the sidebar */
+    }
+
+    /* Image Grid */
+    #container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Max 3 images per row */
+      gap: 150px; /* Spacing between grid items */
+      padding: 50px;
+    }
+
+    .image-item {
+      text-align: center; /* Center-align the description */
+    }
+
+    .image-item img {
+      width: 100%; /* Make the image fit the container */
+      height: 200px; /* Set a fixed height for consistency */
+      border-radius: 200%; /* Circular images */
+      object-fit: cover; /* Maintain aspect ratio */
+      object-position: center; /* Center the image */
+    }
+
+    .image-item p {
+      margin-top: 8px; /* Spacing above the description */
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    /* Media query for medium screens */
+    @media (max-width: 768px) {
+      #container {
+        grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+      }
+    }
+
+    /* Media query for small screens */
+    @media (max-width: 480px) {
+      #container {
+        grid-template-columns: 1fr; /* 1 image per row */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h1 class="logo">Cat.Sy <span class="paw">🐾</span></h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="meowbreeds.html">Meow Breeds</a></li>
+          <li><a href="catowners.html">Meow Members</a></li>
+          <li><a href="cat_records.html">Meow Records</a></li>
+          <li><a href="cat_discussion.html">Meow Discussion</a></li>
+          <li><a href="meoewabout.html">Meow About</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div id="container">
+        <div class="image-item">
+          <img src="assets/images/v25_5.png" alt="Cat Image 1">
+          <p>Domestic Shorthair</p>
+        </div>
+        <div class="image-item">
+          <img src="assets/images/v25_7.png" alt="Cat Image 2">
+          <p>Siamese</p>
+        </div>
+        <div class="image-item">
+          <img src="assets/images/v25_8.png" alt="Cat Image 3">
+          <p>RagDoll</p>
+        </div>
+        <div class="image-item">
+          <img src="assets/images/v25_33.png" alt="Cat Image 4">
+          <p>British Shorthair</p>
+        </div>
+        <div class="image-item">
+          <img src="assets/images/v25_39.png" alt="Cat Image 5">
+          <p>Bengal</p>
+        </div>
+        <div class="image-item">
+          <img src="assets/images/v26_47.png" alt="Cat Image 6">
+          <p>Sphynx</p>
+        </div>
+        <div class="image-item">
+          <img src="assets/images/v26_53.png" alt="Cat Image 7">
+          <p>Abyssinian</p>
+        </div>
+        <div class="image-item">
+          <img src="assets/images/v26_61.png" alt="Cat Image 8">
+          <p>Russian Blue</p>
+        </div>
+        <div class="image-item">
+          <img src="assets/images/v26_64.png" alt="Cat Image 9">
+          <p>Scottish Fold</p>
+        </div>
+        <div class="image-item">
+          <img src="assets/images/v26_73.png" alt="Cat Image 10">
+          <p>Birman</p>
+        </div>
+        <div class="image-item">
+          <img src="assets/images/v26_83.png" alt="Cat Image 11">
+          <p>Maine Coon</p>
+        </div>
+        <div class="image-item">
+          <img src="assets/images/v26_95.png" alt="Cat Image 12">
+          <p>Persian</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

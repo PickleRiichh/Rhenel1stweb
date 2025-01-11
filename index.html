@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Cat.Sy</title>
+  <link href="https://fonts.googleapis.com/css?family=Life+Savers&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+  <div class="container">
+    <!-- Left Section: Full-Screen Image -->
+    <div class="image-section"></div>
+
+    <!-- Right Section: Form -->
+    <div class="form-section">
+      <div class="form-content">
+        <h1>Welcome to<br>Cat.Sy<span class="paw">🐾</span></h1>
+        <!-- Login Form -->
+        <form action="dashboard.html" method="get">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" placeholder="Enter your username" required>
+          
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+          <button type="submit" class="button button-primary">Log in</button>
+        </form>
+
+        <p>Don't Have an Account?</p>
+        <button type="button" class="button button-secondary" onclick="openModal()">Sign Up</button>
+        <button type="button" class="button button-secondary">Admin</button>
+
+        <div class="footer">
+          <p>© 2024 All Rights Reserved <br><a href="#">Privacy</a> and <a href="#">Terms</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="signupModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h2>Create Your Account</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit" class="submit-btn">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const modal = document.getElementById("signupModal");
+
+    // Open Modal Function
+    function openModal() {
+      modal.style.display = "flex";
+    }
+
+    // Close Modal Function
+    function closeModal() {
+      modal.style.display = "none";
+    }
+
+    // Close modal when clicking outside content
+    window.onclick = function(event) {
+      if (event.target === modal) {
+        closeModal();
+      }
+    };
+  </script>
+</body>
+</html>

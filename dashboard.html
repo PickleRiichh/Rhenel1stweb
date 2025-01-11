@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat.Sy - Welcome</title>
+  <link href="https://fonts.googleapis.com/css?family=Life+Savers&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/global.css">
+  <style>
+     /* General Reset */
+     * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Life Savers', cursive;
+      background-color: #f9f9f9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+  
+    /* Banner Image Styling */
+    .banner img {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+      border: 3px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Pet Registration Button */
+    .btn-register {
+      display: inline-block;
+      margin: 20px 0;
+      padding: 15px 30px; /* Larger padding for bigger size */
+      font-size: 1.2em; /* Larger text */
+      font-weight: bold;
+      color: #fff; /* White text */
+      background-color: #1e209f; /* Bright orange */
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn-register:hover {
+      background-color: #e65c00; /* Darker orange on hover */
+      transform: scale(1.05); /* Slight zoom effect */
+    }
+
+  /* Log Out Button */
+    .log-out {
+      position: fixed;
+      bottom: 10px;
+      right: 20px;
+      font-size: 0.8em;
+      text-decoration: none;
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      background-color: #f1f1f1;
+      color: #333;
+    }
+    .log-out:hover {
+      background-color: #e1e1e1;
+      color: #555;
+    }  
+  </style>
+</head>
+<body>
+  <!-- Container for Sidebar and Main Content -->
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h1 class="logo">Cat.Sy <span class="paw">🐾</span></h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="meowbreeds.html">Meow Breeds</a></li>
+          <li><a href="catowners.html">Meow Members</a></li>
+          <li><a href="cat_records.html">Meow Records</a></li>
+          <li><a href="cat_discussion.html">Meow Discussion</a></li>
+          <li><a href="meoewabout.html">Meow About</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Banner with Local Image -->
+      <div class="banner">
+        <img src="assets\images\2.png" alt="Cute kittens in a basket">
+      </div>
+
+      <!-- Content Section -->
+      <section class="welcome-section">
+        <h2>Welcome to Cat.Sy!</h2>
+        <p>
+          cat.sy is a platform designed to make pet care easier and more organized. By registering yourself as a member and adding your pets, 
+          you can enjoy personalized pet care, such as health tips and vaccination reminders, and keep all your pet’s records in one place. 
+          You’ll also gain access to a community of pet lovers, exclusive features like vet appointment scheduling, and special rewards. 
+          Plus, in case of emergencies, our lost-pet assistance will help you act quickly. 
+          Join today and simplify your pet’s care!
+        </p>
+        <a href="cat_records.html" class="btn-register">
+          Pet Registration
+        </a>
+        
+        
+      </section>
+    </main>
+  </div>
+
+  <!-- Log Out Button -->
+  <a href="index.html" class="log-out">Log Out</a>
+</body>
+</html>

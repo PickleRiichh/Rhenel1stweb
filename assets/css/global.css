@@ -1,0 +1,75 @@
+ /* General Reset */
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Life Savers', cursive;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+/* Layout */
+ .container {
+    display: flex;
+    flex: 1;
+  }
+  .sidebar {
+width: 20%;
+background-color: #f1f1f1;
+padding: 0;
+display: flex;
+flex-direction: column;
+position: relative; /* Ensure it stays positioned independently */
+}
+
+.nav-links {
+list-style-type: none;
+margin: 0;
+padding: 10px 0; /* Add slight padding for buttons */
+}
+.nav-links li {
+margin: 0;
+}
+.nav-links a {
+display: block;
+padding: 10px 20px; /* Add spacing inside the buttons */
+text-decoration: none;
+color: #333;
+font-size: 1em;
+}
+.nav-links a:hover {
+background-color: #e1e1e1; /* Optional hover effect */
+color: #555;
+}
+
+  .logo {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .paw {
+    font-size: 1.2em;
+  }
+  .nav-links {
+    list-style-type: none;
+  }
+  .nav-links li {
+    margin: 15px 0;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+  }
+  .nav-links a:hover {
+    color: #555;
+  }
+
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
